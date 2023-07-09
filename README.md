@@ -64,3 +64,20 @@ Next, you will create a new employee in the _ADMINS OU. For this example the new
 </p>
 <p>
 <img <img width="708" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/d40ef562-9426-4aac-9f54-b4295cd55e75">
+<p>
+Now we will join client to the domain (mydomain.com). From the Azure portal we will client's DNS settings to DC's private address. Restart client and log back in as labuser join the domain. Go to settings, scroll down to About, and on the right side select Raname this PC (advanced). Change domain to "mydomain.com" and when prompted enter "mydomain.com\johnshelby" for the username and the password that is associated with the John Shelby. A welcome to the domain message should appear. 
+</p>
+<p>
+<img <img width="485" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/d83efb31-b9e5-40c3-a477-3222c08aec58">
+<p>
+<img <img width="882" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/06662d93-f4c5-4372-a959-eb6120776129">
+<p>
+We will now verify if client is on the domain by logging back in DC, go to Active Directory Users and Computers, and check the computers folder for Client.
+</p>
+<p>
+<img <img width="563" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/5ff19bbe-85ed-4469-a64b-77ae3c848492">
+<p>
+We will now set up Remote Desktop for non-administrative users on client. Right click the Windows button, select System, Remote Desktop, Select users that can remotely access this PC. Select add and type "Domain Users" and click "Check names". You can now log in client as a normal non-administrative user.
+</p>
+<p>
+<img <img width="949" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/6d4c5fdf-2f09-4015-a732-137040e558b5">
