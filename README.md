@@ -81,3 +81,15 @@ We will now set up Remote Desktop for non-administrative users on client. Right 
 </p>
 <p>
 <img <img width="949" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/6d4c5fdf-2f09-4015-a732-137040e558b5">
+<p>
+Finally we will create a bunch of users and attempt to log in client with one of the users. Log into DC as an administrative and open PowerShell_ise as an administrator. Open this file https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 and copy and paste the script into the file. Run the script and observe the accounts being created. While the accounts are being created, go to "Active Directory Users and Computers" and open up the "_EMPLOYEES" OU and observe the accounts.
+</p>
+<p>
+<img <img width="890" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/306d358e-4ad8-4ab8-ab17-60ffba84408f">
+<p>
+<img <img width="884" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/d22723e1-91bf-4db6-9571-b5abfa99d36e">
+<p>
+For the final step, pick one of the users and attempt to log in client with the chosen account. The password for the accounts can be found in the top of the script. Open Command Prompt and use command "whoami" in the command line and this confirm if you did the steps correctly. Congratulations on creating an on-premises Active Directory within Azure VM.
+</p>
+<p>
+<img <img width="665" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/1d3f656d-786c-411a-845b-84834d3bd249">
