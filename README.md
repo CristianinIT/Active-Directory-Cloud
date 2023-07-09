@@ -50,8 +50,21 @@ Let's ensure that the there is connectvity between the client and domain control
 <img width="883" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/5e1ac4c8-04ca-42ec-bf5f-674bffd40bac">
 <p>
 <img <img width="666" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/76c387aa-7247-4caa-bc2e-ece47b722ca4">
-
 <p>
-Now we can finally install Active Directory within the DC's VM. 
+Now we can finally install Active Directory within the DC's VM. We will have to some post-deployment configuration and promote the server as the domain controller. Create a new forest and the root domain name can be anything you decide to use. After that, restart DC and login under user "mydomain.com\labuser".
 </p>
 <br />
+<p>
+<img <img width="890" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/710b1fcd-a1d0-4171-9af1-426c26f17233">
+<p>
+<img <img width="674" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/df78a3fe-89ec-4c14-bc55-3ae00af04a0e">
+<p>
+Now it's time to create an Admin and normal user accounts in AD. We will create some Organizational Units by going through the Server Management Dashboard and click on tools to click on Active Directory Users and Computers. From here you want to right click on mydomain.com and create new OUs with the names "_ADMINS" and "_EMPLOYEES"
+</p>
+<p>
+<img <img width="569" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/db60923a-bf05-4a20-86d7-b7ef6c798fc0">
+<p>
+Next, you will create a new employee in the _ADMINS OU. For this example the new employee's name is John Shelby and the username will be "johnshelby" and make sure to add this person to the "Domain Admins" group. Log out of DC and log back in as "mydomain.com\johnshelby".
+</p>
+<p>
+<img <img width="708" alt="image" src="https://github.com/CristianinIT/Active-Directory-Cloud/assets/138620922/d40ef562-9426-4aac-9f54-b4295cd55e75">
